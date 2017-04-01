@@ -1,0 +1,11 @@
+<div class="finder-component">
+  <input type="text" ng-model="$ctrl.filter">
+  <span class="button-wrapper">
+    <button class="search" ng-click="$ctrl.onFilter($ctrl.filter)">
+      <i class="fa fa-search"></i>
+    </button>
+    <button class="reload" ng-click="$ctrl.reload()">
+      <i class="fa fa-refresh"></i>
+    </button>
+  </span>
+</div>

@@ -1,0 +1,43 @@
+<div class="poster-component">
+  <div class="photo-wrapper"
+       style="background-image: url(/buildings/{{$ctrl.data.photo}})">
+    <div class="discount"
+         ng-if="$ctrl.data.discount != 0"
+         ng-class="{positive: $ctrl.data.discount > 0, negative: $ctrl.data.discount < 0}"
+    >{{$ctrl.data.discount | currency:'$':0}}
+    </div>
+
+    <div class="price">
+      <span class="positive"
+            ng-if="$ctrl.data.discount > 0">
+        <i class="fa fa-long-arrow-up"></i>
+      </span>
+      <span class="negative"
+            ng-if="$ctrl.data.discount < 0">
+        <i class="fa fa-long-arrow-down"></i>
+      </span>{{$ctrl.data.price | currency:'$':0}}
+    </div>
+
+    <div class="heart"
+         ng-click="$ctrl.like()">
+      <div class="outline"
+           ng-if="$ctrl.isLike === false">
+        <i class="fa fa-heart-o fa-lg"></i>
+      </div>
+      <div class="filled"
+           ng-if="$ctrl.isLike === 'active'">
+        <i class="fa fa-heart fa-lg"></i>
+      </div>
+    </div>
+  </div>
+  <div class="details-wrapper">
+    <div class="address">{{$ctrl.data.address}}</div>
+    <div class="details">
+      <span class="land-area">{{$ctrl.data.landArea}} соток</span>
+      <span class="house-area"
+            ng-if="$ctrl.data.houseArea">{{$ctrl.data.houseArea}} м<sup>2</sup></span>
+      <span class="furniture"
+            ng-if="$ctrl.data.furniture">{{$ctrl.data.furniture}}</span>
+    </div>
+  </div>
+</div>

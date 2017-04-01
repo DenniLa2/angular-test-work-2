@@ -1,0 +1,123 @@
+[
+  {
+    "id": 0,
+    "address": "Корабельные сосны, 25км",
+    "photo": "1.jpg",
+    "discount": -1000000,
+    "landArea": 58,
+    "houseArea": 870,
+    "furniture": "с мебелью",
+    "price": 4500000
+  },
+  {
+    "id": 1,
+    "address": "Корабельные сосны, 25км",
+    "photo": "2.jpg",
+    "discount": 0,
+    "landArea": 41,
+    "houseArea": 827,
+    "furniture": "чистая отделка",
+    "price": 4500000
+  },
+  {
+    "id": 2,
+    "address": "Успенский лес, 27км",
+    "photo": "3.jpg",
+    "discount": 0,
+    "landArea": 80,
+    "houseArea": 2200,
+    "furniture": "без отделки",
+    "price": 7500000
+  },
+
+  {
+    "id": 3,
+    "address": "Корабельные сосны, 25км",
+    "photo": "4.jpg",
+    "discount": 0,
+    "landArea": 36,
+    "houseArea": 600,
+    "furniture": "с мебелью",
+    "price": 4866310
+  },
+  {
+    "id": 4,
+    "address": "Жуковка-Академическая, 8км",
+    "photo": "5.jpg",
+    "discount": -350000,
+    "landArea": 12,
+    "houseArea": 500,
+    "furniture": "с мебелью",
+    "price": 1400000
+  },
+  {
+    "id": 5,
+    "address": "Коттон-Вей, 24км",
+    "photo": "11.jpg",
+    "discount": -1300110,
+    "landArea": 15,
+    "houseArea": 0,
+    "furniture": "с мебелью",
+    "price": 699900
+  },
+
+  {
+    "id": 6,
+    "address": "Маслово, 24км",
+    "photo": "6.jpg",
+    "discount": 0,
+    "landArea": 23,
+    "houseArea": 750,
+    "furniture": "с мебелью",
+    "price": 6500000
+  },
+  {
+    "id": 7,
+    "address": "Жуковка, 9км",
+    "photo": "7.jpg",
+    "discount": 0,
+    "landArea": 3,
+    "houseArea": 200,
+    "furniture": "с мебелью",
+    "price": 1200000
+  },
+  {
+    "id": 8,
+    "address": "Ландшафт, 9км",
+    "photo": "8.jpg",
+    "discount": -2238056,
+    "landArea": 27,
+    "houseArea": 850,
+    "furniture": "без мебели",
+    "price": 7273944
+  },
+
+  {
+    "id": 9,
+    "address": "Усадьба Усово, 11км",
+    "photo": "9.jpg",
+    "discount": 4383000,
+    "landArea": 37,
+    "houseArea": 1700,
+    "furniture": "с мебелью",
+    "price": 9000000
+  },
+  {
+    "id": 10,
+    "address": "Лайково, 16км",
+    "photo": "10.jpeg",
+    "discount": -5100000,
+    "landArea": 80,
+    "houseArea": 1500,
+    "furniture": "без мебели",
+    "price": 14900000
+  },
+  {
+    "id": 11,
+    "address": "Горки 8, 15км",
+    "photo": "12.jpg",
+    "discount": 392000,
+    "landArea": 56,
+    "price": 1960000
+  }
+]

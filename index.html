@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Test work</title>
+
+  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="stylesheet" href="dist/font-awesome/css/font-awesome.min.css">
+  <script src="dist/angular/angular.min.js"></script>
+
+  <script src="js/app.js"></script>
+
+  <script src="js/controllers/page.controller.js"></script>
+
+  <script src="js/components/finder/finder.component.js"></script>
+  <script src="js/components/poster/poster.component.js"></script>
+
+  <script src="js/services/API.js"></script>
+
+
+</head>
+<body ng-cloak style="[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}" ng-controller="PageController">
+
+
+<div class="content">
+
+  <finder on-filter="offers.onFilter" on-clear="offers.onClear"></finder>
+
+  <div class="posters-wrapper">
+
+    <poster ng-repeat="poster in offers.data | filter:offers.doFilter "
+            poster-data="poster"
+            is-like="poster.isLike"
+            on-like="offers.onLike">
+    </poster>
+  </div>
+
+</div>
+
+
+</body>
+</html>

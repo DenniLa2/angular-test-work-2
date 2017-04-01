@@ -1,0 +1,175 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+  url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "RobotoLight"; */
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+  url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+/* font-family: "RobotoBold"; */
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+  url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  padding-top: 8px;
+}
+
+.finder-component {
+  width: 876px;
+  margin: 0 auto;
+
+  input {
+    margin-left: 23px;
+    font: 21px RobotoLight;
+    width: 590px;
+    border: 1px solid #dddddd;
+  }
+  .button-wrapper {
+    display: inline-block;
+    position: absolute;
+
+    button {
+      background-color: #4584ee;
+      color: white;
+      border: none;
+      height: 30px;
+      width: 60px;
+      font-size: 16px;
+
+      &.reload {
+        right: 0;
+      }
+    }
+  }
+}
+
+.posters-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 876px;
+}
+
+.poster-component {
+  width: 260px;
+  height: 268px;
+  margin: 10px 16px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: deepskyblue;
+  }
+
+  .photo-wrapper {
+    width: 100%;
+    height: 196px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .discount {
+      position: absolute;
+      color: white;
+      padding: 2px 4px;
+      font: 12px RobotoRegular;
+      border-radius: 3px;
+      top: 10px;
+      left: 15px;
+
+      &.positive {
+        background-color: #f51925;
+      }
+      &.negative {
+        background-color: #8ec14b;
+      }
+    }
+
+    .price {
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
+      background-color: white;
+      border-radius: 4px;
+      padding: 5px 10px;
+      font: 16px RobotoRegular;
+
+      .positive {
+        color: #f51925
+      }
+      .negative {
+        color: #8ec14b;
+      }
+    }
+
+    .heart {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+
+      .outline {
+        color: white;
+      }
+      .filled {
+        color: rgba(232, 95, 81, 0.9);
+      }
+    }
+  }
+
+  .details-wrapper {
+    background-color: white;
+    padding: 16px;
+
+    .address {
+      font: 13px RobotoBold;
+    }
+    .details {
+      font: 13px RobotoRegular;
+
+      @padding: 5px;
+      .land-area {
+        padding-right: @padding;
+      }
+      .house-area {
+        padding-left: @padding;
+        padding-right: @padding;
+        border-left: 1px solid #dddddd;
+      }
+      .furniture {
+        padding-left: @padding;
+        padding-right: @padding;
+        border-left: 1px solid #dddddd;
+      }
+    }
+  }
+}

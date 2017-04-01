@@ -1,0 +1,16 @@
+{
+  "name": "outstaff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files 'css/*.css'"
+  },
+  "author": "Denni Adam (dennila2@ya.ru)",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "font-awesome": "^4.7.0"
+  }
+}

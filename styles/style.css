@@ -1,0 +1,146 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f5f5f5;
+  padding-top: 8px;
+}
+.finder-component {
+  width: 876px;
+  margin: 0 auto;
+}
+.finder-component input {
+  margin-left: 23px;
+  font: 21px RobotoLight;
+  width: 590px;
+  border: 1px solid #dddddd;
+}
+.finder-component .button-wrapper {
+  display: inline-block;
+  position: absolute;
+}
+.finder-component .button-wrapper button {
+  background-color: #4584ee;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 60px;
+  font-size: 16px;
+}
+.finder-component .button-wrapper button.reload {
+  right: 0;
+}
+.posters-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 876px;
+}
+.poster-component {
+  width: 260px;
+  height: 268px;
+  margin: 10px 16px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+.poster-component:hover {
+  border-color: deepskyblue;
+}
+.poster-component .photo-wrapper {
+  width: 100%;
+  height: 196px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.poster-component .photo-wrapper .discount {
+  position: absolute;
+  color: white;
+  padding: 2px 4px;
+  font: 12px RobotoRegular;
+  border-radius: 3px;
+  top: 10px;
+  left: 15px;
+}
+.poster-component .photo-wrapper .discount.positive {
+  background-color: #f51925;
+}
+.poster-component .photo-wrapper .discount.negative {
+  background-color: #8ec14b;
+}
+.poster-component .photo-wrapper .price {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font: 16px RobotoRegular;
+}
+.poster-component .photo-wrapper .price .positive {
+  color: #f51925;
+}
+.poster-component .photo-wrapper .price .negative {
+  color: #8ec14b;
+}
+.poster-component .photo-wrapper .heart {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.poster-component .photo-wrapper .heart .outline {
+  color: white;
+}
+.poster-component .photo-wrapper .heart .filled {
+  color: rgba(232, 95, 81, 0.9);
+}
+.poster-component .details-wrapper {
+  background-color: white;
+  padding: 16px;
+}
+.poster-component .details-wrapper .address {
+  font: 13px RobotoBold;
+}
+.poster-component .details-wrapper .details {
+  font: 13px RobotoRegular;
+}
+.poster-component .details-wrapper .details .land-area {
+  padding-right: 5px;
+}
+.poster-component .details-wrapper .details .house-area {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: 1px solid #dddddd;
+}
+.poster-component .details-wrapper .details .furniture {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: 1px solid #dddddd;
+}
